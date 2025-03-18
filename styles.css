@@ -1,0 +1,111 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  width: 320px;
+  margin: 0;
+  padding: 20px;
+  background: #ffffff;
+  color: #2d3436;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 25px 0;
+  color: #2c3e50;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: filter 0.2s;
+  box-sizing: border-box;
+}
+
+#clear-all { background: #e74c3c; color: white; }
+#add-whitelist { background: #3498db; color: white; }
+#toggle-whitelist { background: #2ecc71; color: white; }
+
+/* Input Field */
+#whitelist-input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 2px solid #dfe6e9;
+  border-radius: 6px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+}
+
+/* Saved Websites Section */
+.whitelist-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 8px 0;
+  background: #ffffff;
+  border: 2px solid #dfe6e9;
+  border-radius: 6px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%; /* Ensuring width matches input box */
+  box-sizing: border-box;
+}
+
+/* Ensure text remains visible */
+.whitelist-item span {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Delete button with trash icon */
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px; /* Fixed size */
+  height: 32px;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+  transform: scale(0.98);
+}
+
+/* Use an actual trash/delete icon */
+.delete-btn i {
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+#counter {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #636e72;
+}
